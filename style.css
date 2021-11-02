@@ -1,0 +1,55 @@
+body {
+    background-color: black;
+    margin: auto;
+    padding: 50px;
+}
+
+/*Cabeçalho*/
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: lightgrey;
+    align-items: center;
+    position: relative;
+}
+
+.headtext {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-left: 100px;
+    padding: 1%;
+    width: 60%;
+    background-color: whitesmoke;
+}
+
+.foto {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 5px 0px 50px grey;
+    padding: 10px;
+    margin: 10px;
+}
+
+/*Corpo*/
+main {
+    display: flex;
+    flex-direction: row;
+    background-color: whitesmoke;
+}
+
+#infos {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    background-color: lightgray;
+    padding: 20px;
+}
+
+#conteudo {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 15px;
+}
