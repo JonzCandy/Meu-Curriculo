@@ -1,6 +1,5 @@
 body {
     background-color: black;
-    margin: auto;
     padding: 50px;
 }
 
@@ -11,13 +10,15 @@ header {
     background-color: lightgrey;
     align-items: center;
     position: relative;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .headtext {
     display: flex;
     flex-direction: column;
     margin: auto;
-    margin-left: 100px;
+    margin-left: 50px;
     padding: 1%;
     width: 60%;
     background-color: whitesmoke;
@@ -36,20 +37,25 @@ header {
 main {
     display: flex;
     flex-direction: row;
-    background-color: whitesmoke;
+    background-color: lightgray;
+    max-width: 1200px;
+    margin: auto;
 }
 
 #infos {
     display: flex;
     flex-direction: column;
-    max-width: 350px;
-    background-color: lightgray;
+    max-width: 300px;
     padding: 20px;
+    text-align: justify;
 }
 
 #conteudo {
     display: flex;
     flex-direction: column;
+    background-color: whitesmoke;
     margin: auto;
-    padding: 15px;
+    padding: 1%;
+    width: 60%;
+    margin-left: 5px;
 }
