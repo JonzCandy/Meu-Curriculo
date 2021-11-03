@@ -1,16 +1,17 @@
 body {
     background-color: black;
-    padding: 50px;
+    padding: 5%;
 }
 
 /*Cabeçalho*/
 header {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     background-color: lightgrey;
     align-items: center;
     position: relative;
-    max-width: 1200px;
+    max-width: 90%;
     margin: auto;
 }
 
@@ -18,26 +19,27 @@ header {
     display: flex;
     flex-direction: column;
     margin: auto;
-    margin-left: 70px;
     padding: 1%;
     width: 60%;
     background-color: whitesmoke;
+    text-align: center;
 }
 
 .foto {
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    box-shadow: -10px -10px 50px rgb(0, 0, 0);
-    margin: 10px;
+    box-shadow: -10px 10px 50px rgb(0, 0, 0);
+    margin: auto;
 }
 
 /*Corpo*/
 main {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     background-color: lightgray;
-    max-width: 1200px;
+    max-width: 90%;
     margin: auto;
 }
 
@@ -45,8 +47,9 @@ main {
     display: flex;
     flex-direction: column;
     max-width: 300px;
-    padding: 20px;
+    padding: 2%;
     text-align: justify;
+    margin: auto;
 }
 
 #conteudo {
@@ -56,7 +59,6 @@ main {
     margin: auto;
     padding: 1%;
     width: 60%;
-    margin-left: 5px;
 }
 
 h1,h2,h4 {
@@ -77,14 +79,14 @@ a:visited {
 a:focus {
     border: 1px solid black;
     background: gray;
-    font-size: 20px;
+    font-size: 125%;
 }
 a:active {
     background: rgb(255, 255, 255);
 }
 a:hover {   
     background: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: 125%;
 }
 a:link {
     color: rgb(0, 0, 0); 
