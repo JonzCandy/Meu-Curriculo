@@ -1,64 +1,68 @@
 body {
     background-color: black;
     padding: 5%;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
 }
 
 /*Cabeçalho*/
 header {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     background-color: lightgrey;
     align-items: center;
-    position: relative;
-    max-width: 90%;
-    margin: auto;
+    justify-content: space-around;
 }
 
 .headtext {
     display: flex;
     flex-direction: column;
-    margin: auto;
     padding: 1%;
-    width: 60%;
+    max-width: 60%;
     background-color: whitesmoke;
     text-align: center;
 }
 
 .foto {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
+    height: 100%;
+    width: 100%;
     box-shadow: -10px 10px 50px rgb(0, 0, 0);
-    margin: auto;
+}
+
+figure {
+    max-width: 20%;
+    max-height: 20%;
+}
+
+nav {
+    display: none;
 }
 
 /*Corpo*/
 main {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: space-around;
     background-color: lightgray;
-    max-width: 90%;
-    margin: auto;
 }
 
 #infos {
     display: flex;
     flex-direction: column;
-    max-width: 300px;
+    max-width: 20%;
     padding: 2%;
     text-align: justify;
-    margin: auto;
 }
 
 #conteudo {
     display: flex;
     flex-direction: column;
     background-color: whitesmoke;
-    margin: auto;
     padding: 1%;
-    width: 60%;
+    max-width: 60%;
 }
 
 h1,h2,h4 {
@@ -79,15 +83,66 @@ a:visited {
 a:focus {
     border: 1px solid black;
     background: gray;
-    font-size: 125%;
 }
 a:active {
     background: rgb(255, 255, 255);
 }
 a:hover {   
     background: rgb(255, 255, 255);
-    font-size: 125%;
 }
 a:link {
     color: rgb(0, 0, 0); 
+}
+
+/*Uso em Dispositivo Móvel*/
+@media screen and (max-width:740px){
+    header {
+        flex-direction: column;
+        width: auto;
+        height: 100%;
+    }
+    main {
+        display: none;
+    }
+    figure {
+        max-width: 250px;
+        max-height: 250px;
+    }
+    .headtext {
+        max-width: 80%;
+        padding: 0;
+    }
+    nav {
+        display: flex;
+        width: 80%;
+        justify-content: center;
+    }
+    nav>ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    nav>ul>a {
+        background-color: whitesmoke;
+        display: flex;
+        width: auto;
+        height: 30px;
+        padding: 10px;
+        align-items: center;
+    }
+    nav>ul>a:hover {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        background: none;
+    }
+    #infos {
+        max-width: 100%;
+        background-color: whitesmoke;
+    }
+    #conteudo {
+        max-width: 100%;
+        padding: 0;
+        padding-left: 10px;
+    }
 }
